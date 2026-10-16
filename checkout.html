@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - ShopZone</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Shop<span>Zone</span></a>
+      <div class="header-actions" style="margin-left:auto;">
+        <a href="cart.html" class="cart-link">
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count">0</span>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Checkout</h2>
+
+    <!-- Filled by checkout.js: either the checkout form, or order confirmation after placing the order -->
+    <div id="checkout-content"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a 15-day internship project &mdash; <span>ShopZone</span> (demo only, no real payments)</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

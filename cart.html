@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart - ShopZone</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Shop<span>Zone</span></a>
+
+      <form class="search-bar" id="search-form">
+        <input type="text" id="search-input" placeholder="Search for products, brands and more" />
+        <button type="submit">🔍</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count">0</span>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <nav class="category-nav" id="category-nav">
+        <a href="index.html" data-category="all">All</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Your Cart</h2>
+
+    <!-- Filled by cart.js: either the cart items + summary, or an "empty cart" message -->
+    <div id="cart-content"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a 15-day internship project &mdash; <span>ShopZone</span> (demo only, no real payments)</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/cart-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopZone - Online Shopping</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Shop<span>Zone</span></a>
+
+      <form class="search-bar" id="search-form">
+        <input type="text" id="search-input" placeholder="Search for products, brands and more" />
+        <button type="submit">🔍</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count">0</span>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <nav class="category-nav" id="category-nav">
+        <a href="index.html" data-category="all" class="active">All</a>
+        <!-- Category links are also generated dynamically in main.js -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <h1>Everything you need, delivered fast</h1>
+    <p>Electronics, books, fashion and home essentials — all in one place.</p>
+  </section>
+
+  <!-- ===================== PRODUCT GRID ===================== -->
+  <main class="container">
+    <h2 class="section-title" id="grid-title">All Products</h2>
+    <div class="product-grid" id="product-grid">
+      <!-- Product cards are injected here by JavaScript -->
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>Built as a 15-day internship project &mdash; <span>ShopZone</span> (demo only, no real payments)</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
